@@ -48,8 +48,16 @@ Download the [NWPU-RESISC45](https://www.tensorflow.org/datasets/catalog/resisc4
 
 
 
+### 3. Training
 
-### 3. Pre-trained Models on NWPU-RESISC45 (initial / +RFD) 
+Swin V2 Tiny training on RESISC45 (dataset path need to be changed in train.py):
+```
+python train.py 
+```
+To train other models, `train.py` need to be changed.        
+  
+
+### 4. Pre-trained Models on NWPU-RESISC45 (initial / +RFD) 
 
 | name (initial / +RFD) |    type     |  #params (M)  |   FLOPs (G)   | Throughput (fps) |     Top-1 acc     |                                                                                       model                                                                                        |
 |:---------------------:|:-----------:|:-------------:|:-------------:|:----------------:|:-----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
@@ -76,14 +84,6 @@ Download the [NWPU-RESISC45](https://www.tensorflow.org/datasets/catalog/resisc4
 |     ConvNeXt Base     |     CNN     | 87.61 / 91.89 | 15.38 / 16.61 |   2726 / 2520    | 95.02 / **96.13** |  [initial](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_base.pth) / [+RFD](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_RFD_base.pth)  |
 
 
-### 4. Training
-
-Swin V2 Tiny training on RESISC45:
-```
-python train.py 
-```
-To train other models, `train.py` need to be changed.        
-  
 
 ## Acknowledgement
 This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models), [ConvNeXt](https://github.com/facebookresearch/ConvNeXt) and [mmdetection](https://github.com/open-mmlab/mmdetection) repositories.
