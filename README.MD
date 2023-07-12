@@ -16,13 +16,13 @@ class="center">
 
 ## Image Classification
 ### 1. Dependency Setup
-Create an new conda virtual environment
+Create a new conda virtual environment
 ```
 conda create -n RFD python=3.7 -y
 conda activate RFD
 conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
 ```
-Clone this repo and install required packages:
+Clone this repo and install the required packages:
 ```
 git clone https://github.com/lwCVer/RFD
 cd RFD/
@@ -49,9 +49,9 @@ Download the [NWPU-RESISC45](https://www.tensorflow.org/datasets/catalog/resisc4
 
 
 
-### 3. Pre-trained Models (ininial / +RFD) 
+### 3. Pre-trained Models (initial / +RFD) 
 
-| name (ininial / +RFD) |    type     |  #params (M)  |   FLOPs (G)   | Throughput (fps) |     Top-1 acc     |                                                                                       model                                                                                        |
+| name (initial / +RFD) |    type     |  #params (M)  |   FLOPs (G)   | Throughput (fps) |     Top-1 acc     |                                                                                       model                                                                                        |
 |:---------------------:|:-----------:|:-------------:|:-------------:|:----------------:|:-----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
 |     GFNet-H Tiny      |     FFT     | 14.60 / 15.68 |  2.05 / 2.43  |  2693 /   2128   |   92.27 / 94.76   |   [initial](https://github.com/lwCVer/RFD/releases/download/pre-train/GFNet-H_tiny.pth) / [+RFD](https://github.com/lwCVer/RFD/releases/download/pre-train/GFNet-H_RFD_tiny.pth)   |
 |     GFNet-H Small     |     FFT     | 31.43 / 33.05 |  4.59 / 5.34  |   2405 /  2466   |   93.40 / 95.11   |  [initial](https://github.com/lwCVer/RFD/releases/download/pre-train/GFNet-H_small.pth) / [+RFD](https://github.com/lwCVer/RFD/releases/download/pre-train/GFNet-H_RFD_small.pth)  |
