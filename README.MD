@@ -49,7 +49,7 @@ Download the [NWPU-RESISC45](https://www.tensorflow.org/datasets/catalog/resisc4
 
 
 
-### 3. Pre-trained Models (initial / +RFD) 
+### 3. Pre-trained Models on NWPU-RESISC45 (initial / +RFD) 
 
 | name (initial / +RFD) |    type     |  #params (M)  |   FLOPs (G)   | Throughput (fps) |     Top-1 acc     |                                                                                       model                                                                                        |
 |:---------------------:|:-----------:|:-------------:|:-------------:|:----------------:|:-----------------:|:----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------:|
