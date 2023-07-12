@@ -88,6 +88,8 @@ To train other models, `train.py` need to be changed.
 ## Acknowledgement
 This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models), [ConvNeXt](https://github.com/facebookresearch/ConvNeXt) and [mmdetection](https://github.com/open-mmlab/mmdetection) repositories.
 
+Your star is the power that keeps us updating github.
+
 ## Citation
 If you find this repository helpful, please consider citing:
 ```
