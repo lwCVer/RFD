@@ -10,7 +10,7 @@ This is the official Pytorch/Pytorch implementation of the paper: <br/>
 We propose a new and universal downsampling module named **robust feature downsampling (RFD)**.
 
 <p align="center">
-<img src="https://github.com/lwCVer/RFD/blob/main/figures/fig3_all_model_1.pdf" width=100% 
+<img src="https://github.com/lwCVer/RFD/releases/download/pre-train/fig3.png" width=100% 
 class="center">
 </p>
 
