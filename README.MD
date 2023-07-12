@@ -20,7 +20,7 @@ Create a new conda virtual environment
 ```
 conda create -n RFD python=3.7 -y
 conda activate RFD
-conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch -c conda-forge
+conda install pytorch==1.10.0 torchvision==0.11.0 torchaudio==0.10.0 cudatoolkit=11.3 -c pytorch
 ```
 Clone this repo and install the required packages:
 ```
