@@ -1,1 +1,10 @@
+tensorboard
+setuptools==59.5.0
+timm
+matplotlib
+ptflops
 
+# ----------------------------------------
+# install the following packages for mmdet
+# pip install mmcv-full==1.6.0 -f https://download.openmmlab.com/mmcv/dist/cu113/torch1.10.0/index.html
+# pip install mmdet==2.25.0
