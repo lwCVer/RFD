@@ -80,7 +80,7 @@ Download the [NWPU-RESISC45](https://www.tensorflow.org/datasets/catalog/resisc4
 
 Swin V2 Tiny training on RESISC45:
 ```
-python train.py --data_dir ../../data/RESISC45 
+python train.py 
 ```
 To train other models, `train.py` need to be changed.        
   
