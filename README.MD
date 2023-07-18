@@ -31,7 +31,7 @@ pip install -r requirements.txt
 
 ### 2. Dataset Preparation
 
-Download the [NWPU-RESISC45](https://www.tensorflow.org/datasets/catalog/resisc45) classification dataset and structure the data as follows:
+You can download our already sliced [NWPU-RESISC45](https://github.com/lwCVer/RFD/releases/download/untagged-f0c18b912acc14db4ea2/NWPU-RESISC45.tar.xz) dataset, or download the [NWPU-RESISC45](https://www.tensorflow.org/datasets/catalog/resisc45) classification dataset from the official document and structure the data as follows:
 ```
 /path/to/NWPU-RESISC45/
   train/
