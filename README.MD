@@ -15,6 +15,19 @@ class="center">
 </p>
 
 ## Image Classification
+
+If you want to replace the downsampling module in your network with the RFD, you can do the following：
+```
+self.conv_down = nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=2, padding=1)
+```
+to 
+
+```
+self.RFD = RFD.SRFD(in_channels, out_channels) # original size to 4x downsampling layer
+self.RFD = RFD.DRFD(in_channels, out_channels) # Deep feature downsampling
+```
+
+## Image Classification
 ### 1. Dependency Setup
 Create a new conda virtual environment
 ```
@@ -83,7 +96,7 @@ To train other models, `train.py` need to be changed.
 |    ConvNeXt Small     |     CNN     | 49.49 / 51.90 |  8.70 / 9.45  |   2734 / 2478    |   93.90 / 95.48   | [initial](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_small.pth) / [+RFD](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_RFD_small.pth) |
 |     ConvNeXt Base     |     CNN     | 87.61 / 91.89 | 15.38 / 16.61 |   2726 / 2520    | 95.02 / **96.13** |  [initial](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_base.pth) / [+RFD](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_RFD_base.pth)  |
 
-
+ 
 
 ## Acknowledgement
 This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models), [ConvNeXt](https://github.com/facebookresearch/ConvNeXt), [mmdetection](https://github.com/open-mmlab/mmdetection) and [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) repositories.
