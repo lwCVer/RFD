@@ -23,9 +23,9 @@ self.conv_down = nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=2, p
 
 to 
 
-self.RFD = RFD.SRFD(in_channels, out_channels) # original size to 4x downsampling layer
+self.SRFD = RFD.SRFD(in_channels, out_channels) # original size to 4x downsampling layer
 or
-self.RFD = RFD.DRFD(in_channels, out_channels) # Deep feature downsampling
+self.DRFD = RFD.DRFD(in_channels, out_channels) # Deep feature downsampling
 ```
 
 ## Image Classification
