@@ -20,9 +20,7 @@ If you want to replace the downsampling module in your network with the RFD, you
 ```
 replace:
 self.conv_down = nn.Conv2d(in_channels, out_channels, kernel_size=3, stride=2, padding=1)
-
 to 
-
 self.SRFD = RFD.SRFD(in_channels, out_channels) # original size to 4x downsampling layer
 or
 self.DRFD = RFD.DRFD(in_channels, out_channels) # Deep feature downsampling
