@@ -95,7 +95,9 @@ To train other models, `train.py` need to be changed.
 |    ConvNeXt Small     |     CNN     | 49.49 / 51.90 |  8.70 / 9.45  |   2734 / 2478    |   93.90 / 95.48   | [initial](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_small.pth) / [+RFD](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_RFD_small.pth) |
 |     ConvNeXt Base     |     CNN     | 87.61 / 91.89 | 15.38 / 16.61 |   2726 / 2520    | 95.02 / **96.13** |  [initial](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_base.pth) / [+RFD](https://github.com/lwCVer/RFD/releases/download/pre-train/ConvNeXt_RFD_base.pth)  |
 
- 
+ ## Star History
+
+[![Star History Chart](https://api.star-history.com/svg?repos=lwCVer/RFD&type=Timeline)](https://star-history.com/#lwCVer/RFD&Timeline)
 
 ## Acknowledgement
 This repository is built using the [timm](https://github.com/rwightman/pytorch-image-models), [ConvNeXt](https://github.com/facebookresearch/ConvNeXt), [mmdetection](https://github.com/open-mmlab/mmdetection) and [mmsegmentation](https://github.com/open-mmlab/mmsegmentation) repositories.
