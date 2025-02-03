@@ -14,7 +14,16 @@ We propose a new and universal downsampling module named **robust feature downsa
 class="center">
 </p>
 
-## Image Classification
+
+<details>
+  <summary>
+  <font size="+1">Abstract</font>
+  </summary>
+Remote-sensing (RS) images present unique challenges for computer vision (CV) due to lower resolution, smaller objects, and fewer features. Mainstream backbone networks show promising results for traditional visual tasks. However, they use convolution to reduce feature map dimensionality, which can result in information loss for small objects in RS images and decreased performance. To address this problem, we propose a new and universal downsampling module named robust feature downsampling (RFD). RFD fuses multiple feature maps extracted by different downsampling techniques, creating a more robust feature map with a complementary set of features Leveraging this, we overcome the limitations of conventional convolutional downsampling, resulting in a more accurate and robust analysis of RS images. We develop two versions of the RFD module, shallow RFD (SRFD) and deep RFD (DRFD), tailored to adapt to different stages of feature capture and improve feature robustness. We replace the downsampling layers (DSL) of existing mainstream backbones with the RFD module and conduct comparative experiments on several public RS image datasets. The results show significant improvements compared to baseline approaches in RS image classification, object detection, and semantic segmentation. Specifically, our RFD module achieved an average performance gain of 1.5% on the NWPU-RESISC45 classification dataset without utilizing any additional pretraining data, resulting in state-of-the-art performance on this dataset. Moreover, in detection and segmentation tasks on dataset for object detection in aerial images (DOTA) and instance segmentation in aerial images dataset (iSAID), our RFD module outperforms the baseline approaches by 2%–7% when utilizing pretraining data from NWPU-RESISC45. These results highlight the value of the RFD module in enhancing the performance of RS visual tasks.
+</details>
+
+
+## Application
 
 If you want to replace the downsampling module in your network with the RFD, you can do the following：
 ```
